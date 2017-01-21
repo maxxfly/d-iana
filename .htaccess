@@ -1,0 +1,11 @@
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 50 hours"
+ExpiresByType text/css   "access plus 50 hours"
+ExpiresByType application/x-javascript "access plus 50 hours"
+ExpiresByType application/javascript "access plus 50 hours"
+
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/javascript text/css application/x-javascript application/javascript
+
+RewriteEngine on
+
+RewriteRule ^$ /v2/ [R=301]
